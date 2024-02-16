@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainDisplay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#000000"
+    android:orientation="horizontal"
+    android:padding="5sp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/faceLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5sp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <SurfaceView
+            android:id="@+id/faceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/inputsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5sp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingTop="5sp"
+        android:paddingBottom="5sp">
+
+        <TextView
+            android:id="@+id/redTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="Red Value"
+            android:textAlignment="center" />
+
+        <SeekBar
+            android:id="@+id/redSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="255"
+            android:progress="128"
+            android:progressBackgroundTint="#FF0000"
+            android:progressTint="#FF0000"
+            android:thumbTint="#FF0000" />
+
+        <TextView
+            android:id="@+id/greenTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="Green Value"
+            android:textAlignment="center" />
+
+        <SeekBar
+            android:id="@+id/greenSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="255"
+            android:progress="128"
+            android:progressBackgroundTint="#00FF00"
+            android:progressTint="#00FF00"
+            android:thumbTint="#00FF00" />
+
+        <TextView
+            android:id="@+id/blueTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="Blue Value"
+            android:textAlignment="center" />
+
+        <SeekBar
+            android:id="@+id/blueSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="255"
+            android:progress="128"
+            android:progressBackgroundTint="#0000FF"
+            android:progressTint="#0000FF"
+            android:thumbTint="#0000FF" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/hairStyleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:gravity="center_vertical"
+            android:text="Hair Styles:" />
+
+        <Spinner
+            android:id="@+id/hairStyleSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10sp" />
+
+        <TextView
+            android:id="@+id/facialFeaturesTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:gravity="center_vertical"
+            android:text="Facial Features:" />
+
+        <RadioGroup
+            android:id="@+id/facialFeaturesRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="50sp">
+
+            <RadioButton
+                android:id="@+id/hairRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Hair" />
+
+            <RadioButton
+                android:id="@+id/eyessRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Eyes" />
+
+            <RadioButton
+                android:id="@+id/skinRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Skin" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/randomTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:gravity="center_vertical"
+            android:text="Random Face Button:"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/randomButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50sp"
+            android:layout_marginRight="50sp"
+            android:layout_weight="1"
+            android:backgroundTint="#4D06AE"
+            android:text="Random Face"
+            app:cornerRadius="25sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -18,7 +18,7 @@
         android:layout_weight="1"
         android:orientation="vertical">
 
-        <SurfaceView
+        <com.example.facemakerapplication.Face
             android:id="@+id/faceView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -141,7 +141,7 @@
                 android:text="Hair" />
 
             <RadioButton
-                android:id="@+id/eyessRadioButton"
+                android:id="@+id/eyesRadioButton"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"

@@ -2,6 +2,7 @@
     <string name="app_name">Face Maker Application</string>
     <string-array name="hair_styles">
         <item>Crew Cut</item>
+        <item>Side Burns</item>
         <item>Mohawk</item>
         <item>Bald</item>
     </string-array>
